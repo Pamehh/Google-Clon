@@ -1,0 +1,235 @@
+
+/**************************INTERFAZ********************************/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13 px;
+
+}
+
+header{
+   /*background-color: aqua;*/
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    /**Propiedades para justificar cosas-alinea los elementos y luego los pone al final a la izq**/
+    margin-right: 120px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    /**background-color: wheat;**/
+    width: 30px;
+    /**para quitar los balazos se utsa la propiedad**/
+    list-style: none;
+    /**Propiedad flex- que sea responsivo y flexible**/
+    display: flex;
+    /**centra los elementos en el bloque**/
+    justify-content: center;
+    /**centrar verticalmente**/
+    align-items: center;
+    height: auto;
+}
+
+a{
+    /**Remueve las líneas de abajo de los hipervinculos**/
+    text-decoration: none;
+
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: rgba(0,0,0,.87)
+
+}
+
+nav .nav-right-section .menu{
+    /**Lo puse para ver dónde estaba la imagenbackground-color: chartreuse;**/
+    /**permite poner imagenes con links, la imagen está muy gde**/
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    /**Escala la imagen al mayor tamaño posible sinrecortarla ni estirarla **/
+    background-size: contain;
+    background-clip: no-repeat;
+}
+
+nav .nav-right-section img{
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    /**Redondear bordes de imagen**/
+    border-radius: 30px;
+}
+
+/**************************BUSCADOR-MAIN********************************/
+
+
+main{
+    background-color: rgb(255, 255, 255);
+    margin-top: 150px;
+    text-align: center;
+    margin-top: 110px;
+}
+
+/*Sección logo*/
+
+main .main-logo{
+    width: 530px;
+    background-color: rgb(255, 255, 255);
+    /** 0 significa que no haya margen arriba ni abajo, el auto es izquierda y derecha se ajustan automáticamente**/
+    margin: 0 auto;
+    /*Para que la cajita de búsqueda y el logo no estén tan pegados*/
+    margin-bottom: 35px;
+}
+
+/*Ahora sí  editar la imagen*/
+main .main-logo img{
+    height: 120px;
+}
+
+main .main-input{
+    /*background-color: blue;*/
+    width: 530px;
+    margin: 0 auto;
+
+}
+
+
+main .main-input-container{
+    /*Anchura de línea, estilo y color*/
+    border: 1px solid #dfe1e5;
+    width: 525px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Borde para que no queden pegados los botones de buscar con google y voy a tener suerte*/
+    margin-bottom: 35px;
+}
+
+main .main-input input{
+    border: none;
+    height: 40px;
+    outline: none;
+    width: 490px;
+}
+
+/*Poner efecto de sombreado al acercar el mouse al buscador*/
+main .main-input-container:hover{
+    border-color: #dfe1e500;
+    box-shadow: 0 1px 6px 0px #20212447;
+}
+
+main .main-input .search-icon{
+background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+background-position: center;
+background-size: contain;
+height: 15px;
+/*Margin y padding son margenes pero uno es hacia afuera y otro hacia adentro respectivamente*/
+padding-left: 6%;
+margin-left: 8px;
+background-repeat: no-repeat;
+}
+
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-position: center;
+    background-size: contain;
+    height: 20px;
+    padding-left: 6%;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    }
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-position: center;
+    background-size: contain;
+    height: 20px;
+    padding-right: 6%;
+    margin-right: 19px;
+    background-repeat: no-repeat;
+        }
+
+
+main .main-buttons{
+    
+    /*Es el mismo ancho que el buscador, main input*/
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: 1.5px solid transparent;
+    background-color: #f5f0f0;
+    color:#494545;
+    font-size: 15px;
+    
+    height: 40px;
+    border-radius: 4px;
+    /*relleno solo del lado derecho e izquierdo de los botones*/
+    padding: 0 15px;
+    /*Margen entre botones*/
+    margin-right: 15px;
+}
+
+
+/*Aquí va el efecto hover de los botones, se crea margen, cambia color de letra*/
+main .main-buttons button:hover{
+    border-color: #bdb2b2;
+    box-shadow: 0.2px 0.2px 1px 0px #bdb2b2;
+    
+}
+
+
+
+footer{
+    background-color: #eeeeee;
+    width: auto;
+    height: 110px;
+ }
+
+
+footer .main-footer-first{
+    padding-top: 15px;
+    margin-top: 96px;
+    margin-left: 36px;
+    color:#757373;
+    font-size: 15px;
+} 
+
+nav .footer-left-section a{
+    margin-right: 20px;
+    color:#757373;
+    font-size: 15px;
+}
+
+nav .footer-left-section{
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    
+    height: auto;
+}
+
+nav .footer-right-section{
+    margin-left: 500px;
+    
+    
+}
+
+li{
+    color:#757373;
+    font-size: 15px;
+}
+
